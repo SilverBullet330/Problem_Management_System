@@ -1,0 +1,89 @@
+<script type="text/javascript" src="js/userinfo-jquery.js"></script>
+<div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="col-sm-12" align="center">
+				<table class="userinfo" data-id="infotable">
+					<tr align="center">
+							<div class="page-header">
+					  			<h1>个人信息 &nbsp<small>你是谁 谁是你</small></h1>
+							</div>
+					</tr>
+					<tr align="center">
+							<img src="/img/4.png" alt="用户头像" class="img-circle" height="250"/>
+					</tr>
+					<tr>
+						<td>
+							<h2><small>ID：</small></h2>
+						</td>	
+					</tr>
+					<tr>
+						<td>
+							<h2><small>用户名：</small></h2>
+							<input id="NameChange" class="form-control change_info_data" type="text" placeholder="用户名"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2><small>密码：</small></h2>
+							<input id="PwdChange" type="password" class="form-control change_info_data" placeholder="输入新密码"/><br class="sure_change_info">
+							<input id="PwdChange_" type="password" class="form-control change_info_data" placeholder="第二次输入新密码"/>
+
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2><small>用户等级：</small></h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h2><small>注册时间：</small></h2>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<hr>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<button id="InfoChange" type="button" class="btn btn-info btn-lg btn-block change_info">&nbsp修&nbsp改&nbsp信&nbsp息&nbsp</button>
+						</td>
+					</tr>
+					<tr class="sure_change_info">
+						<td>
+							<button id="ConInfoChange" type="button" class="btn btn-primary btn-lg btn-block">&nbsp确&nbsp认&nbsp修&nbsp改&nbsp信&nbsp息&nbsp</button>
+						</td>
+					</tr>
+					<tr><td><div><br></div></td>
+					</tr>
+					<tr class="change_info_warning">
+						<td>
+							<div class="alert alert-warning alert-dismissible change_info_warning_message" role="alert">
+							  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							  <strong>Wrong:</strong>
+							</div>
+						</td>
+					</tr>
+					<tr class="change_info_success">
+						<td>
+							<div class="alert alert-success alert-dismissible" role="alert">
+							  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							  <strong>Success</strong> 信息修改成功
+							</div>
+						</td>
+					</tr>
+					<tr class="change_info_error">
+						<td>
+							<div class="alert alert-danger alert-dismissible" role="alert">
+							  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+							  <strong>ERROR！</strong> 信息修改失败！请联系管理员
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

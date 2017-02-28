@@ -1,0 +1,79 @@
+<script type="text/javascript" src="js/trolley-jquery.js"></script>
+
+<script type="text/javascript" src="lib/jquery-ui-1.10.4.min.js"></script>
+
+<div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+			<!--col-sm-3开始，即侧边栏-->
+				<div class="col-sm-3">
+					<div class="personinfo">
+						<table data-id="userinfo">
+							<tr>
+								<td>
+									<div>
+										<center><img src="/img/4.png" alt="用户头像" class="img-circle" height="170" ></center>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h2>
+									个人信息<br>
+									<small>用户名：</small><br>
+									<small>等级：</small><br>
+									<small>注册时间：</small><br>
+									</h2>
+									<a href="#/userinfo"><button type="button" class="btn btn-info btn-xs btn-block">详细信息</button></a>
+								</td>
+							</tr>
+							<!-- 一行空格 -->
+							<tr><td><br></td></tr>
+							<!--<tr>-->
+								<!--<td>-->
+									<!--<a href="#/admin"><button type="button" class="btn btn-success btn-xs btn-block">管理员界面</button></a>-->
+								<!--</td>-->
+							<!--</tr>-->
+							<!-- 一行下划线 -->
+							<tr><td><hr></td></tr>
+						</table>
+					</div>
+					<div>
+						<a href="#"><img src="/img/4.png" alt="广告" class="img-rounded" height="200" width="200"></a>
+					</div>
+				</div><!--col-sm-3结束-->
+
+				<div class="col-sm-8">
+					<div class="page-header">
+					  <h1>Trolley &nbsp<small>这里是你挑选到的题目</small></h1>
+					</div>
+						<div id="sortable" class="problem">
+
+						</div>
+					<button type="button" class="btn btn-info btn-lg btn-block">生成试卷</button>
+					<!-- 分页 -->
+					<div align="center">
+						<nav class="navbar" role="navigation">
+							<div class="container-fluid">
+
+									<div >
+										<ul class="pagination"></ul>
+									</div>
+
+							</div>
+						</nav>
+					</div>
+					<!-- 页码结束 -->
+				</div><!--col-sm-8结束-->
+
+				<div class="col-sm-1">
+					<div class="pinned btn-group-vertical">
+						<button id="toTOP" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="置顶"><span class="glyphicon glyphicon-chevron-up"></span></button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-qrcode"></span></button>
+						<button type="button" class="btn btn-default"><span class="glyphicon glyphicon-share"></span></button>
+						<button id="toBottom" type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="置底"><span class="glyphicon glyphicon-chevron-down"></span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
